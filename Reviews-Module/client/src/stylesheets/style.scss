@@ -67,7 +67,7 @@ body {
   margin-bottom: 15px;
 }
 
-.btn-light {
+.dropdown .btn-light {
   border-color: #2f2c2c33;
   color: #212529;
   background-color: #f8f9fa00;
@@ -123,7 +123,6 @@ body {
   border-radius: 50%;
 }
 
-.button {
-  padding: 0 15px;
-  border: 10px solid transparent;
+.page-button {
+  border: 24px solid transparent;
 }

@@ -54,7 +54,7 @@ class ReviewEntry extends React.Component {
           <Col lg={12} sm={12} xs={12} xl={12}>
             {this.props.review.description.slice(0, 111)}
             {this.state.expanded && this.props.review.description.slice(111)}
-            {this.props.review.description.length > 100 && this.state.dots && (
+            {this.props.review.description.length > 100 && (
               <button onClick={this.expandText} className="read-btn">
                 {this.state.read}
               </button>

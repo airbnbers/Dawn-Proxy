@@ -119,32 +119,37 @@ class Pagination extends React.Component {
       <ul className="pagination">
         <Row>
           <li
-            className={pager.currentPage === 1 ? "disabled button" : "button"}
+            className={
+              pager.currentPage === 1 ? "disabled page-button" : "page-button"
+            }
           >
             <a onClick={() => this.setPage(1)}>First</a>
           </li>
           <li
-            className={pager.currentPage === 1 ? "disabled button" : "button"}
+            className={
+              pager.currentPage === 1 ? "disabled page-button" : "page-button"
+            }
           >
             <a onClick={() => this.setPage(pager.currentPage - 1)}>Previous</a>
           </li>
           {pager.pages.map((page, index) => (
-            <li
-              key={index}
-              className={
-                pager.currentPage === page
-                  ? "active highlight button"
-                  : "button"
-              }
-            >
-              <a onClick={() => this.setPage(page)}>{page}</a>
+            <li key={index}>
+              <div
+                className={
+                  pager.currentPage === page
+                    ? "active highlight page-button"
+                    : "page-button"
+                }
+              >
+                <a onClick={() => this.setPage(page)}>{page}</a>
+              </div>
             </li>
           ))}
           <li
             className={
               pager.currentPage === pager.totalPages
-                ? "disabled button"
-                : "button"
+                ? "disabled page-button"
+                : "page-button"
             }
           >
             <a onClick={() => this.setPage(pager.currentPage + 1)}>Next</a>
@@ -152,8 +157,8 @@ class Pagination extends React.Component {
           <li
             className={
               pager.currentPage === pager.totalPages
-                ? "disabled button"
-                : "button"
+                ? "disabled page-button"
+                : "page-button"
             }
           >
             <a onClick={() => this.setPage(pager.totalPages)}>Last</a>

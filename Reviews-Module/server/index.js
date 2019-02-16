@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const db = require("../database-pg/index.js");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 const {
   findMostRecent,
   findMostRelevant,
@@ -9,7 +10,7 @@ const {
 } = require("../database-pg/index.js");
 
 const port = 3001;
-
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/../client/dist"));
