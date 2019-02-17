@@ -1,13 +1,12 @@
-# Project Name
+# Bearbnb
 
-> Project description
+> A group project recreating Airbnb's sample product page; specifically the Slideshow, Checkout and Reviews Modules. We each created our own database and server and combined them in our own proxy server. This project was completed by Dawn Saquin, Michael Lou and Thomas Hsu.
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/airbnbers/Reviews-Module
+  - https://github.com/airbnbers/checkout_module
+  - https://github.com/airbnbers/Thomas-Slideshow-Module
 
 ## Table of Contents
 
@@ -17,7 +16,7 @@
 
 ## Usage
 
-> Some usage instructions
+> npm start
 
 ## Requirements
 
