@@ -1,0 +1,178 @@
+.checkout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 6;
+}
+
+.chekout-modal {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-40%, -50%);
+  background-color: white;
+  padding: 18px;
+  height: auto;
+  border: 1px solid #cecece;
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #app {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 1px solid #cecece;
+    height: 75px;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #app {
+    position: sticky;
+    top: 20px;
+    margin-top: 20px;
+    width: 350px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #cecece;
+  }
+}
+.price {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.header {
+  margin: 18px auto 18px auto;
+  font-size: 13px;
+  padding-bottom: 18px;
+  width: 315px;
+  text-align: left;
+  border-bottom: 1px solid #dad8d8;
+}
+.header .reviews {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.header .reviews div {
+  margin-right: 5px;
+}
+
+.footer {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+.footer .header {
+  justify-content: center;
+  text-align: center;
+  border-bottom: none;
+  width: auto;
+  margin-right: 40px;
+}
+.footer .header .reviews {
+  justify-content: center;
+}
+.footer .sub-but {
+  width: 315px;
+  height: 50px;
+  margin: 10px 0px 10px 0px;
+  background-color: #f87d7d;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+.footer .sub-but:focus {
+  outline: 0;
+}
+
+.text-header {
+  margin: 18px auto 5px auto;
+  justify-content: center;
+  font-size: 13px;
+  width: 315px;
+  text-align: left;
+}
+
+.form-form {
+  margin: 0px auto 0px auto;
+  width: 315px;
+}
+.form-form .form-line, .form-form .form-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid #dad8d8;
+  color: #5a5a5a;
+}
+.form-form .form-line .line-value, .form-form .form-total .line-value {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.form-form .form-line .line-value button, .form-form .form-total .line-value button {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  color: red;
+  border: 1px solid red;
+}
+.form-form .form-line .line-value button:focus, .form-form .form-total .line-value button:focus {
+  outline: 0;
+}
+.form-form .form-total {
+  font-weight: bold;
+  border: none;
+  color: black;
+}
+
+.info {
+  color: #5a5a5a;
+  font-size: 13px;
+  padding: 0px 0px 10px 10px;
+}
+
+.sub-but {
+  width: 315px;
+  height: 50px;
+  margin: 10px 0px 10px 0px;
+  background-color: #f87d7d;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.warning {
+  font-size: 18px;
+  margin: 18px 0px 0px 0px;
+}
+
+.close-but {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.close-but:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=input.css.map */
