@@ -21,7 +21,7 @@ class ReviewList extends React.Component {
     // update state with new page of items
     this.setState({ pageOfItems: pageOfItems });
     window.scrollTo({
-      top: 1115,
+      top: 1471,
       left: 0,
       behavior: "smooth"
     });
