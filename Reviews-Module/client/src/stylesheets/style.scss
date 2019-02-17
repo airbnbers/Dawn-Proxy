@@ -108,6 +108,7 @@ body {
 
 // pagination numbers
 .pagination {
+  color: rgb(15, 114, 118);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -121,8 +122,46 @@ body {
   background-color: rgb(15, 114, 118);
   border-color: rgb(15, 114, 118);
   border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
 
-.page-button {
-  border: 24px solid transparent;
+.number-center {
+  text-align: center;
+}
+
+.button {
+  // padding: 0 15px;
+  border: 10px solid transparent;
+}
+
+.arrow-page {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(15, 114, 118);
+}
+
+.arr-height {
+  padding-top: 15px;
+}
+
+////////////////////
+// MOBILE SCREEN ///
+////////////////////
+
+@media only screen and (max-width: 1200px) {
+  .hide-first-last {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hide-page {
+    display: none;
+  }
+  .arrow-page {
+    margin-right: 20px;
+    margin-left: 10px;
+  }
 }
