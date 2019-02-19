@@ -43,6 +43,18 @@ $small-font: 13px;
   left: $left;
 }
 
+@media screen and (max-width: 576px) {
+  .sub-but {
+    max-width: 40% !important;
+    margin: auto auto auto 10px !important;
+  }
+  .footer {
+    .header {
+      margin: auto 10px auto auto;
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #app {
     @include position(fixed, $bottom: 0px);
