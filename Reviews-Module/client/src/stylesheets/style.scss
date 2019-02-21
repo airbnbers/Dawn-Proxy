@@ -15,6 +15,7 @@ $primary-color: rgb(75, 75, 75);
 }
 
 .review-body {
+  max-width: 700px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: $primary-color;
@@ -164,5 +165,9 @@ $primary-color: rgb(75, 75, 75);
   .arrow-page {
     margin-right: 20px;
     margin-left: 10px;
+  }
+
+  .desciption-align {
+    padding-right: 20px;
   }
 }

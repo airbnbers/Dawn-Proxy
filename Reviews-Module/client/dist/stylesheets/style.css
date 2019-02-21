@@ -9,6 +9,7 @@
 }
 
 .review-body {
+  max-width: 700px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #4b4b4b;

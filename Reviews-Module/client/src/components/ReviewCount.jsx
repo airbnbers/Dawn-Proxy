@@ -2,6 +2,10 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 
 class ReviewCount extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     const average = this.props.average || 0;
 

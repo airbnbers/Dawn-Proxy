@@ -20,10 +20,11 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // recent: [],
       reviews: []
     };
     this.setupReviews = this.setupReviews.bind(this);
+    this.queryReviewListings = this.queryReviewListings.bind(this);
+    this.customReviewListings = this.customReviewListings.bind(this);
   }
 
   componentDidMount() {
@@ -121,12 +122,8 @@ class App extends React.Component {
           <ConditionsRatings ratings={ratings} reviews={this.state.reviews} />
         </Row>
         <Row className="bottom-spacing top-spacing btn-toolbar">
-          <SearchReviews
-            handleSearchInput={this.queryReviewListings.bind(this)}
-          />
-          <DropDownSearch
-            handleValueChange={this.customReviewListings.bind(this)}
-          />
+          <SearchReviews handleSearchInput={this.queryReviewListings} />
+          <DropDownSearch handleValueChange={this.customReviewListings} />
         </Row>
         <Row>
           <ReviewList reviews={this.state.reviews} />

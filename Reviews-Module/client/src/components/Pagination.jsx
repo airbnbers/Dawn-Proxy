@@ -121,24 +121,26 @@ class Pagination extends React.Component {
         <ul className="pagination">
           <Row>
             <li
+              onClick={() => this.setPage(1)}
               className={
                 pager.currentPage === 1
                   ? "disabled button hide-first-last arrow-page"
                   : "button hide-first-last arrow-page"
               }
             >
-              <a onClick={() => this.setPage(1)}>
+              <a>
                 <i className="fas fa-angle-double-left arr-height" />
               </a>
             </li>
             <li
+              onClick={() => this.setPage(pager.currentPage - 1)}
               className={
                 pager.currentPage === 1
                   ? "disabled button arrow-page"
                   : "button arrow-page"
               }
             >
-              <a onClick={() => this.setPage(pager.currentPage - 1)}>
+              <a>
                 <i className="fas fa-angle-left arr-height" />
               </a>
             </li>
@@ -161,24 +163,26 @@ class Pagination extends React.Component {
               </li>
             ))}
             <li
+              onClick={() => this.setPage(pager.currentPage + 1)}
               className={
                 pager.currentPage === pager.totalPages
                   ? "disabled button arrow-page"
                   : "button arrow-page"
               }
             >
-              <a onClick={() => this.setPage(pager.currentPage + 1)}>
+              <a>
                 <i className="fas fa-angle-right arr-height" />
               </a>
             </li>
             <li
+              onClick={() => this.setPage(pager.totalPages)}
               className={
                 pager.currentPage === pager.totalPages
                   ? "disabled button hide-first-last arrow-page"
                   : "button hide-first-last arrow-page"
               }
             >
-              <a onClick={() => this.setPage(pager.totalPages)}>
+              <a>
                 <i className="fas fa-angle-double-right arr-height" />
               </a>
             </li>

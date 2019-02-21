@@ -8,28 +8,28 @@
   z-index: 6;
 }
 
-.checkout-modal {
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translate(-40%, -50%);
-  background-color: white;
-  padding: 18px;
-  height: auto;
-  border: 1px solid #cecece;
-  outline: none;
-}
-
 @media screen and (max-width: 576px) {
-  .sub-but {
+  .footer.sub-but {
     max-width: 40% !important;
-    margin: auto auto auto 10px !important;
+    margin: 10px auto auto 10px !important;
   }
 
   .footer .header {
     margin: auto 10px auto auto;
+  }
+
+  .checkout-modal {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-40%, -40%);
+    background-color: white;
+    padding: 18px;
+    height: auto;
+    border: 1px solid #cecece;
+    outline: none;
   }
 }
 @media screen and (max-width: 1200px) {
