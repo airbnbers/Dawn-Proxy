@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 app.use(
   "/rooms/:listingId",
-  express.static(path.join(__dirname, "/../public"))
+  express.static("/rooms/:listingId", path.join(__dirname, "/../public"))
 );
 
 app.use(
