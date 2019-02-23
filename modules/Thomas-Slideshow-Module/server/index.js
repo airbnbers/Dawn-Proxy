@@ -5,7 +5,7 @@ const dbutils = require("../db/dbutils");
 
 let port = 3003;
 
-app.use(express.static(__dirname + "/../client/dist"));
+app.use("/rooms/:listingId/", express.static(__dirname + "/../client/dist"));
 
 app.get("/rooms/:listingId/images", cors(), (req, res) => {
   console.log("Heard a GET request");
