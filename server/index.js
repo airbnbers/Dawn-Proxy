@@ -10,21 +10,21 @@ app.use(express.static(path.join(__dirname, "/../public")));
 app.use(
   "/rooms/reviews/recent",
   proxy({
-    target: "http://bearbnb.us-east-2.elasticbeanstalk.com/rooms/1/",
+    target: "http://bearbnb-reviews-module.us-east-1.elasticbeanstalk.com/",
     changeOrigin: true
   })
 );
 app.use(
   "/rooms/reviews/relevant",
   proxy({
-    target: "http://bearbnb.us-east-2.elasticbeanstalk.com/rooms/1/",
+    target: "http://bearbnb-reviews-module.us-east-1.elasticbeanstalk.com/",
     changeOrigin: true
   })
 );
 app.use(
   "/rooms/reviews/filter",
   proxy({
-    target: "http://bearbnb.us-east-2.elasticbeanstalk.com/rooms/1/",
+    target: "http://bearbnb-reviews-module.us-east-1.elasticbeanstalk.com/",
     changeOrigin: true
   })
 );
