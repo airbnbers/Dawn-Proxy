@@ -1,51 +1,53 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = process.env.PORT || 3000;
 const proxy = require("http-proxy-middleware");
+
+const port = process.env.PORT || 3000;
+
 app.use(express.static(path.join(__dirname, "/../public")));
 
 app.use(
   "/rooms/reviews/recent",
   proxy({
-    target: "http://127.0.0.1:3001",
+    target: "http://bearbnb.us-east-2.elasticbeanstalk.com/rooms/1/",
     changeOrigin: true
   })
 );
 app.use(
   "/rooms/reviews/relevant",
   proxy({
-    target: "http://127.0.0.1:3001",
+    target: "http://bearbnb.us-east-2.elasticbeanstalk.com/rooms/1/",
     changeOrigin: true
   })
 );
 app.use(
   "/rooms/reviews/filter",
   proxy({
-    target: "http://127.0.0.1:3001",
+    target: "http://bearbnb.us-east-2.elasticbeanstalk.com/rooms/1/",
     changeOrigin: true
   })
 );
 app.use(
-  "/rooms/1",
+  "/rooms/checkout/:listingId",
   proxy({
-    target: "http://127.0.0.1:3002",
-    changeOrigin: true
-  })
-);
-
-app.use(
-  "/rooms/bookings/1",
-  proxy({
-    target: "http://127.0.0.1:3002",
+    target: "http://checkout-dev.us-east-2.elasticbeanstalk.com/",
     changeOrigin: true
   })
 );
 
 app.use(
-  "/rooms/1/images",
+  "/rooms/bookings/:listingId",
   proxy({
-    target: "http://127.0.0.1:3003",
+    target: "http://checkout-dev.us-east-2.elasticbeanstalk.com/",
+    changeOrigin: true
+  })
+);
+
+app.use(
+  "/rooms/:listingId/images",
+  proxy({
+    target: "http://bearbnb-photo-module.us-east-2.elasticbeanstalk.com/",
     changeOrigin: true
   })
 );
