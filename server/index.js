@@ -5,10 +5,7 @@ const proxy = require("http-proxy-middleware");
 
 const port = process.env.PORT || 3000;
 
-app.use(
-  "/rooms/:listingId",
-  express.static("/rooms/:listingId/", path.join(__dirname, "/../public"))
-);
+app.use("/rooms/:listingId", express.static(__dirname + "/../public"));
 
 app.use(
   "/rooms/reviews/recent",
