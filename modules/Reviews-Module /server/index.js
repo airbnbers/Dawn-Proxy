@@ -13,7 +13,7 @@ const port = 3001;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use("/rooms/:listingId/", express.static(__dirname + "/../client/dist"));
+app.use(express.static(__dirname + "/../client/dist"));
 
 app.get("/rooms/reviews/recent", function(req, res) {
   console.log("Inside server for get request");
