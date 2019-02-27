@@ -1,23 +1,30 @@
-# Project Name
+# Bearbnb
 
-> Project description
+> Recreation of Airbnb's Customer Reviews Module
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+- https://github.com/airbnbers/checkout_module
+- https://github.com/airbnbers/Thomas-Slideshow-Module
 
 ## Table of Contents
 
+1. [Tech Stack](#techstack)
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
-1. [Development](#development)
+
+## Tech Stack
+
+- Javascript, React 
+- React-Bootstrap
+- Node.js, Express
+- Postgres, Knex
 
 ## Usage
 
-> Some usage instructions
+1. Install project's dependencies.
+2. Open two CLI windows and run the commands npm run dev:react, and npm run start.
+3. Run tests: npm run test.
 
 ## Requirements
 
